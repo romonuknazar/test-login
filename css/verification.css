@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  /* background: #fff; */
 }
 
 .panel-body-verif {
@@ -15,7 +15,6 @@ body {
   margin-bottom: 26px;
   color: #5a5b5d;
   font-size: 15px;
-  font-weight: 200;
 }
 
 .panel-body-verif-text a{

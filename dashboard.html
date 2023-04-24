@@ -35,7 +35,7 @@
   </div>
 
   <div class="status">
-    <div class="status-wrapper">
+    <div class="status-wrapper" id="statusDiv">
       <p class="status-text">Two-step verification successful.</p>
     </div>
   </div>
@@ -56,7 +56,7 @@
       <hr>
       <h3>Login to a USCIS Service</h3>
       <div class="menu-li menu-ul-li">
-        <div class="li-block-logo"><a class="logo-link logo-link-img" href="account.html"><img src="img/uscis.png" alt=""></a></div>
+        <div class="li-block-logo"><a class="logo-link logo-link-img" href="account.html" onclick="statusDiv.classList.remove('focus')"><img src="img/uscis.png" alt=""></a></div>
         <div class="li-block-text">
           <p>Apply for immigration benefits, find tools and
             resources to assist in preparation for naturalization, and search for
@@ -119,6 +119,9 @@
       </div>
     </div>
   </div>
+  <script>
+    statusDiv.classList.add('focus')
+  </script>
 </body>
 
 </html>

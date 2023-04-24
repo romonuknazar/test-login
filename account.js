@@ -1,56 +1,55 @@
 const personalAccountUser = JSON.parse(localStorage.personalAccountUser)
 const tabs = document.querySelectorAll('.tab')
-const tablis = document.querySelectorAll('.tabli')
+const listItems = document.querySelectorAll('.notices-list-item')
+const dataSentsSpan = document.querySelectorAll('.data-sent')
 
-
+// do arrow !!!!!!!!!!!!!!!!!!!!!!!!?
 
 fillPage()
+sectionSelect.onchange = showTab
 
+
+listItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    const details = item.querySelector('.notices-list-item-details');
+    details.hidden = !details.hidden;
+    if (!details.hidden) {
+      item.style.backgroundColor = '#F9F9F9'
+      item.classList.add('item-active')
+    }
+    else{
+      item.style.backgroundColor = 'inherit'
+      item.classList.remove('item-active')
+    }
+  })
+})
 
 function fillPage() {
   initial.innerText = personalAccountUser.initial
   clientName.innerText = personalAccountUser.name
   submitdate.innerText = personalAccountUser.submitdate
   receiptId.innerText = personalAccountUser.receiptdate
-  // datesend.innerText = personalAccountUser.datesend
-  // rows.innerText = personalAccountUser.rows
+ 
+  dataSentsSpan.forEach(dtspan => {
+    dtspan.innerText = personalAccountUser.datesend
+  })
 
-  datasend.innerText = personalAccountUser.datesend
-
-  tablis.forEach(tabli => {
-    if (personalAccountUser.rows == 5){
-      tabli.hidden = false
+  listItems.forEach(listItem => {
+    if (personalAccountUser.rows == 5) {
+      listItem.hidden = false
     }
   })
 }
 
-sectionSelect.onchange = showTab
-
 function showTab(e) {
- const selectOption = e.target.value
- console.log(selectOption)
+  const selectOption = e.target.value
+  console.log(selectOption)
 
-tabs.forEach(tab => {
-  if (tab.id === selectOption) {
-          tab.hidden = false;
-        } else {
-          tab.hidden = true;
-        }
-})
+  tabs.forEach(tab => {
+    if (tab.id === selectOption) {
+      tab.hidden = false;
+    } else {
+      tab.hidden = true;
+    }
+  })
 }
-
-// // получаем элементы выбора и вкладок
-// const select = document.getElementById('section-select');
-// const tabs = document.querySelectorAll('.tab');
-
-// // при выборе опции в select отображаем соответствующую вкладку
-// select.addEventListener('change', (event) => {
-//   const selectedOption = event.target.value;
-//   tabs.forEach(tab => {
-//     if (tab.id === selectedOption.toLowerCase().replace(' ', '-')) {
-//       tab.style.display = 'block';
-//     } else {
-//       tab.style.display = 'none';
-//     }
-//   });
-// });

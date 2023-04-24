@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
 body {
   -webkit-font-smoothing: antialiased;
   background-image: url(/img/bg-pattern.png);
   background-repeat: repeat;
   height: 100%;
-  font-family: SourceSansProRegular, sans-serif, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1em;
   line-height: 24px;
 }
@@ -18,7 +20,7 @@ body {
 .header {
   font-size: 12px;
   font-size: 0.75rem;
-  font-family: SourceSansProRegular, sans-serif, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   position: relative;
   color: #005288;
   padding: 7px 0 6px;
@@ -130,7 +132,7 @@ h2 {
   width: 100%;
   font-size: 19px;
   line-height: 25px;
-  font-family: SourceSansProRegular, sans-serif, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   transition: all 0.3s ease-in-out, padding 1ms;
   border: 1px solid #c0c2c4;
   border-radius: 2px;
@@ -210,7 +212,7 @@ h2 {
 .create-acc-create-link {
   display: block;
   margin-bottom: 35px;
-  font-family: SourceSansProRegular, sans-serif, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #0078ae;
   font-style: normal;
   font-weight: bold;
@@ -219,7 +221,7 @@ h2 {
 
 .create-acc-help {
   display: block;
-  font-family: SourceSansProRegular, sans-serif, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   cursor: pointer;
   color: #0078ae;
@@ -242,7 +244,7 @@ h3 {
   font-size: 1.5rem;
   line-height: 30px;
   line-height: 1.875rem;
-  font-family: SourceSansProRegular, sans-serif, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #0078ae;
   font-weight: bold;
 }

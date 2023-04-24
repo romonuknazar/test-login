@@ -2,7 +2,7 @@ body {
   color: #444444;
   margin: 0;
   font-size: 0.875rem;
-  font-family: SourceSansProRegular, Source Sans Pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   line-height: 1.43;
   background: #FFFFFF;
@@ -93,7 +93,7 @@ body {
   padding-top: 7px;
   margin-right: 26px;
   text-transform: uppercase;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background: #EBEBEB;
   border-radius: 50%;
   text-align: center;
@@ -109,7 +109,7 @@ body {
   overflow-wrap: break-word;
   font-size: 20px;
   line-height: 28px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #444444;
   text-transform: none;
 }
@@ -117,7 +117,7 @@ body {
 #clientName {
   font-size: 28px;
   line-height: 32px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #444444;
   text-transform: capitalize;
 }
@@ -127,7 +127,7 @@ body {
   overflow-wrap: break-word;
   font-size: 28px;
   line-height: 32px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #444444;
   text-transform: capitalize;
   margin-bottom: 16px;
@@ -159,7 +159,7 @@ body {
 .case-text {
   font-size: 16px;
   line-height: 20px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #444444;
 }
 
@@ -168,7 +168,7 @@ body {
   overflow-wrap: break-word;
   font-size: 24px;
   line-height: 28px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #444444;
   font-weight: normal;
 }
@@ -211,7 +211,7 @@ body {
 .update-text {
   font-size: 20px;
   line-height: 28px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #444444;
   font-weight: 700;
   margin-bottom: 16px;
@@ -220,14 +220,14 @@ body {
 .desription-text {
   font-size: 16px;
   line-height: 22px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #444444;
   margin-bottom: 16px;
 }
 
 .select-list label {
   font-size: 20px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   padding-bottom: 8px;
   line-height: 20px;
   text-align: left;
@@ -246,7 +246,7 @@ body {
   -webkit-border-radius: 3px;
   background-clip: padding-box;
   font-size: 20px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -264,16 +264,148 @@ body {
 }
 
 #sectionSelect {
-  background-image: url('/img/arrow.png');
+  background-image: url('/img/arrow-filled.png');
   background-repeat: no-repeat;
-  background-size: 10px 10px;
+  background-size: 10px 6px;
   background-position: right 20px center;
 }
 
 #sectionSelect option {
   font-size: 21px;
-  font-family: SourceSansProRegular, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+.tab {
+  margin-top: 32px;
+}
+
+.tab-yoursteps p {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #444444;
+  margin-bottom: 16px;
+}
+
+.tab-yoursteps a {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #006699;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tab-yoursteps-wrapper {
+  margin-top: 32px;
+  padding: 16px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  background-color: #F9F9F9;
+}
+
+.tab-yoursteps-wrapper p {
+  margin-bottom: 32px;
+  color: #000;
+}
+
+.tab-yoursteps-wrapper button {
+  display: block;
+  margin: 16px auto 0;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #666666;
+  background: #EBEBEB 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  padding: 8px 10px;
+}
+
+.tab-notices h3 {
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: SourceSansProLight, sans-serif;
+  color: #444444;
+  font-weight: 200;
+}
+
+.tab-notices-header {
+  font-family: SourceSansProSemibold, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 16px;
+  background-color: #EBEBEB;
+  color: #000;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.tab-notices-header span {
+  color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.notices-list-item {
+  position: relative;
+  padding: 16px 43px 16px 16px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.notices-list-item:after {
+  position: absolute;
+  content: '';
+  background: url(/img/tab-arrow-down.png) no-repeat center;
+  background-size: contain;
+  top: 30px;
+  right: 10px;
+  width: 20px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.item-active:after{  position: absolute;
+  content: '';
+  background: url(/img/tab-arrow-up.png) no-repeat center;
+  background-size: contain;
+  top: 30px;
+  right: 10px;
+  width: 20px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+
+}
+
+.notices-list-item p {
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+  color: #000000;
+}
+
+.notices-list-item-details {
+  margin-top: 16px;
+}
+
+.notices-list-item-details p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  font-weight: 700;
+}
+
+.notices-list-item-details a {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006699;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
 
 @media screen and (max-width: 1028px) {
   .casetitle {
@@ -298,6 +430,10 @@ body {
 
   .avatar {
     margin: 0 auto 15px;
+  }
+
+  .information-block {
+    margin: 0 0 60px;
   }
 
   #clientName {

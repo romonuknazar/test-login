@@ -60,7 +60,7 @@ body {
 .menu h3 {
   color: #000000;
   text-align: center;
-  font-family: SourceSansProRegular, sans-serif, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: normal;
   margin-bottom: 30px;
 }
@@ -155,6 +155,7 @@ body {
 
   .menu {
     padding: 10px 25px;
+    background: #fff;
   }
 }
 
