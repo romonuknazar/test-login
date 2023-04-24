@@ -1,0 +1,318 @@
+body {
+  color: #444444;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: SourceSansProRegular, Source Sans Pro, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background: #FFFFFF;
+}
+
+.menu {
+  border-bottom: 3px solid #EBEBEB;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.menu-logo {
+  max-width: 230px;
+  width: 30%;
+  height: 68px;
+}
+
+.menu-burger {
+  padding: 36px 0;
+  display: flex;
+}
+
+.hamburger-box {
+  display: block;
+  width: 32px;
+  height: 21px;
+  position: relative;
+}
+
+.hamburger-inner {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #003366;
+  border-radius: 4px;
+  top: 50%;
+}
+
+.hamburger-inner::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #003366;
+  border-radius: 4px;
+  top: -7px;
+}
+
+.hamburger-inner::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #003366;
+  border-radius: 4px;
+  bottom: -7px;
+}
+
+.hamburger-text {
+  font-size: 18px;
+  font-family: SourceSansProSemibold, sans-serif;
+  color: #003366;
+}
+
+.baner {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px;
+}
+
+.baner-wrapper {
+  display: flex;
+  padding: 30px 0 30px 5px;
+}
+
+.avatar {
+  padding-top: 7px;
+  margin-right: 26px;
+  text-transform: uppercase;
+  font-family: SourceSansProRegular, sans-serif;
+  background: #EBEBEB;
+  border-radius: 50%;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border: 5px solid #FFFFFF;
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+#initial {
+  margin: 0;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: SourceSansProRegular, sans-serif;
+  color: #444444;
+  text-transform: none;
+}
+
+#clientName {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: SourceSansProRegular, sans-serif;
+  color: #444444;
+  text-transform: capitalize;
+}
+
+.casetitle {
+  margin: 0;
+  overflow-wrap: break-word;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: SourceSansProRegular, sans-serif;
+  color: #444444;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  margin-top: 64px;
+  font-weight: normal;
+}
+
+.information-block {
+  padding: 24px;
+  margin-bottom: 60px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  background: #FFFFFF;
+}
+
+.case {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.case .logo {
+  width: 15px;
+  height: 15px;
+}
+
+.case-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: SourceSansProRegular, sans-serif;
+  color: #444444;
+}
+
+.declaration-title {
+  margin-bottom: 8px;
+  overflow-wrap: break-word;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: SourceSansProRegular, sans-serif;
+  color: #444444;
+  font-weight: normal;
+}
+
+.declaration {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 16px;
+}
+
+.declaration-block-right {
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 1px solid #CCCCCC;
+}
+
+.declaration-block b {
+  font-weight: 700;
+}
+
+.alert {
+  padding: 15px 30px 15px 60px;
+  max-width: 100%;
+  border-left-color: #003366;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  background: #FFFFFF;
+  max-width: 678px;
+  text-align: left;
+  border-left-width: 15px;
+  border-left-style: solid;
+  margin-bottom: 32px;
+  color: #444444;
+}
+
+.update-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: SourceSansProRegular, sans-serif;
+  color: #444444;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.desription-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: SourceSansProRegular, sans-serif;
+  color: #444444;
+  margin-bottom: 16px;
+}
+
+.select-list label {
+  font-size: 20px;
+  font-family: SourceSansProRegular, sans-serif;
+  padding-bottom: 8px;
+  line-height: 20px;
+  text-align: left;
+  display: block;
+  color: #000000;
+}
+
+#sectionSelect {
+  margin-bottom: 17px;
+  padding: 0 15px;
+  line-height: 45px;
+  height: 45px;
+  background: #FFFFFF;
+  max-width: 100%;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-clip: padding-box;
+  font-size: 20px;
+  font-family: SourceSansProRegular, sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  color: #003366;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-left: 6px solid #005499;
+}
+
+#sectionSelect:active,
+#sectionSelect:focus {
+  outline: 2px dotted #CCCCCC;
+}
+
+#sectionSelect {
+  background-image: url('/img/arrow.png');
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: right 20px center;
+}
+
+#sectionSelect option {
+  font-size: 21px;
+  font-family: SourceSansProRegular, sans-serif;
+}
+
+@media screen and (max-width: 1028px) {
+  .casetitle {
+    margin-left: 16px;
+  }
+
+  .information-block {
+    margin: 0 16px 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-logo {
+    max-width: 230px;
+    width: 40%;
+  }
+
+  .baner-wrapper {
+    display: block;
+    padding: 30px 15px;
+  }
+
+  .avatar {
+    margin: 0 auto 15px;
+  }
+
+  #clientName {
+    margin-bottom: 15px;
+  }
+
+  .casetitle {
+    margin-left: 15px;
+  }
+
+  .declaration {
+    flex-direction: column;
+  }
+
+  .declaration-block-right {
+    border-right: none;
+  }
+}

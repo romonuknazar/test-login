@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="img/fav.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/verification.css">
+  <script src="verification.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header-wrapper container">
+      <div class="promo">
+        <div class="flag"></div>
+        <p>An official website of the United States government</p>
+      </div>
+      <div class="about">
+        <a href="">Here’s how you know </a>
+        <span><img src="img/arrow.png" alt=""></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="panel">
+        <div class="row-top">
+          <img src="img/panel-logo.svg" alt="">
+        </div>
+        <div class="status">
+          <div class="status-wrapper" id="statusDiv">
+            <p class="status-text">Please enter your verification code to continue.</p>
+          </div>
+        </div>
+        <div class="panel-body panel-body-verif">
+          <h2>Enter your verification code</h2>
+          <hr>
+          <p class="panel-body-verif-text">
+            A verification code has been sent to <span id="verifEmailFirst"></span>.
+             Please enter the code that you received. If you
+            do not receive the code in 10 minutes, please <a href="">request a new verification code</a>.
+          </p>
+          <p class="panel-body-verif-text">
+            If you have lost access to <span id="verifEmailSecond"></span>, enter your backup code instead, or <a href="">Contact Us</a>.
+          </p>
+
+          <hr>
+          <form action="javascript:" id="verif">
+            <div class="form-email form-input">
+              <label for="verif">Secure verification code <abbr class="abbr">*</abbr></label>
+              <input type="text" id="verif">
+            </div>
+            <button class="form-submit" id="verifBtn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="return">
+        <a href="#header">Return to top</a>
+      </div>
+    </div>
+
+    <div class="footer-programs">
+      <ul class="footer-programs-list">
+        <li class="footer-programs-list-item">
+          <a href="">FOIA Requests</a>
+        </li>
+        <li class="footer-programs-list-item">
+          <a href="">myE-Verify</a>
+        </li>
+        <li class="footer-programs-list-item">
+          <a href="">myUSCIS</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <div class="footer-social-logo">
+        <img src="img/footer-logo-text.svg" alt="">
+      </div>
+      <div class="footer-social-contacts">
+        <ul class="footer-social-list">
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+        </ul>
+        <div class="footer-social-contact">
+          <a href="" class="footer-social-contact-link">Contact USCIS</a>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

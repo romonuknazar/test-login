@@ -1,0 +1,41 @@
+body {
+  background: #fff;
+}
+
+.panel-body-verif {
+  padding: 10px 65px 35px;
+}
+
+.panel-body-verif h2{
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.panel-body-verif-text {
+  margin-bottom: 26px;
+  color: #5a5b5d;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.panel-body-verif-text a{
+  color: #0078ae;
+  font-style: normal;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.panel-body-verif-text a:hover{
+  color: #005288;
+}
+
+#verifBtn {
+  margin-top: 0;
+}
+
+
+@media screen and (max-width: 850px){
+.panel-body-verif {
+    padding: 10px 25px 35px;
+}
+}

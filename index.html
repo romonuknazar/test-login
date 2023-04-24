@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizenship and Immigration Services</title>
+  <link href="img/fav.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="main.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header-wrapper container">
+      <div class="promo">
+        <div class="flag"></div>
+        <p>An official website of the United States government</p>
+      </div>
+      <div class="about">
+        <a href="">Here’s how you know </a>
+        <span><img src="img/arrow.png" alt=""></span>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="panel">
+        <div class="row-top">
+          <img src="img/panel-logo.svg" alt="">
+        </div>
+        <div class="panel-body">
+          <h2>Sign In</h2>
+          <form action="javascript:" id="login">
+            <div class="form-email form-input">
+              <label for="email">Email <abbr class="abbr">*</abbr></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-password form-input">
+              <label for="password">Password <abbr class="abbr">*</abbr></label>
+              <input type="password" id="password" name="password">
+            </div>
+            <div class="password-set">
+              <a href="">Forgot your Password?</a>
+              <a href="">Show Password</a>
+            </div>
+            <button class="form-submit" id="loginBtn" type="submit">Sign in</button>
+          </form>
+          <div class="create-acc">
+            <p class="create-acc-title">One account for all of your USCIS needs.</p>
+            <button class="create-acc-create-link" id="openAdminPanel">Create an account.</button>
+            <a class="create-acc-help" href="">Didn't receive confirmation instructions?</a>
+          </div>
+          <hr>
+          <h3>Legal</h3>
+          <ul class="panel-links">
+            <li class="panel-links-item"><a href="">Department of Homeland Security Consent</a></li>
+            <li class="panel-links-item"><a href="">DHS Privacy Notice</a></li>
+            <li class="panel-links-item"><a href="">FBI Privacy Notice</a></li>
+            <li class="panel-links-item"><a href="">Paper Reduction Act Burden Disclosure Notice</a></li>
+            <li class="panel-links-item"><a href="">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="return">
+        <a href="#header">Return to top</a>
+      </div>
+    </div>
+
+    <div class="footer-programs">
+      <ul class="footer-programs-list">
+        <li class="footer-programs-list-item">
+          <a href="">FOIA Requests</a>
+        </li>
+        <li class="footer-programs-list-item">
+          <a href="">myE-Verify</a>
+        </li>
+        <li class="footer-programs-list-item">
+          <a href="">myUSCIS</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <div class="footer-social-logo">
+        <img src="img/footer-logo-text.svg" alt="">
+      </div>
+      <div class="footer-social-contacts">
+        <ul class="footer-social-list">
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+          <li class="footer-social-item"><a href=""></a></li>
+        </ul>
+        <div class="footer-social-contact">
+          <a href="" class="footer-social-contact-link">Contact USCIS</a>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------ админка ----------------------------------- -->
+    <div id="adminPanel" class="container-admin" hidden>
+      <form action="javascript:" id="admin">
+        <h2>user creation</h2>
+        <label>Email<input type="email" name="email"></label>
+        <label>Password<input type="password" name="password"></label>
+        <label>Инициалы<input type="text" name="initial" placeholder="AA"></label>
+        <label>Имя Фамилия<input type="text" name="name" placeholder="Alex Alexov"></label>
+        <label>Submit date<input type="text" name="submitdate" placeholder="March 15, 2023"></label>
+        <label>Receipt id<input type="text" name="receiptdate" placeholder="IOL1234567890"></label>
+        <label>Dates end<input type="text" name="datesend" placeholder="March 15, 2023"></label>
+        <label>Кол-во док.(3/5)<input type="number" name="rows" placeholder="Значение 3 или 5"></label>
+        <button id="addBtn">Внести данные</button>
+        <button id="saveBtn" hidden>Сохранить</button>
+        <button id="cancelBtn" hidden>Отмена</button>
+      </form>
+
+      <button id="delUser">Очистить список юзеров</button>
+      <p>Список юзеров(для ред. нажать на email)</p>
+      <ol id="list"></ol>
+      <button id="leaveAdminPanel">Выключить админку</button>
+    </div>
+  </main>
+</body>
+
+</html>
