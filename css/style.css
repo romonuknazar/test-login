@@ -2,7 +2,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-image: url(/img/bg-pattern.png);
+  background-image: url(../img/bg-pattern.png);
   background-repeat: repeat;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -42,7 +42,7 @@ body {
 .header .flag {
   width: 21px;
   height: 13px;
-  background: url(/img/flag.png);
+  background: url(../img/flag.png);
   background-size: 21px 13px;
 }
 
@@ -384,32 +384,32 @@ h3 {
 }
 
 .footer-social-item:nth-of-type(1) a {
-  background-image: url(/img/footer-facebook.svg), linear-gradient(transparent, transparent);
+  background-image: url(../img/footer-facebook.svg), linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-of-type(2) a {
-  background-image: url(/img/footer-twiter.svg), linear-gradient(transparent, transparent);
+  background-image: url(../img/footer-twiter.svg), linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-of-type(3) a {
-  background-image: url(/img/footer-youtube.svg), linear-gradient(transparent, transparent);
+  background-image: url(../img/footer-youtube.svg), linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-of-type(4) a {
-  background-image: url(/img/footer-insta.svg), linear-gradient(transparent, transparent);
+  background-image: url(../img/footer-insta.svg), linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-of-type(5) a {
-  background-image: url(/img/footer-link.svg), linear-gradient(transparent, transparent);
+  background-image: url(../img/footer-link.svg), linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-of-type(6) a {
-  background-image: url(/img/footer-email.svg), linear-gradient(transparent, transparent);
+  background-image: url(../img/footer-email.svg), linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
 }
 
