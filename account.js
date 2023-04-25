@@ -37,6 +37,7 @@ function fillPage() {
   listItems.forEach(listItem => {
     if (personalAccountUser.rows == 5) {
       listItem.hidden = false
+      rowsNumber.innerHTML = '(5 of 5)'
     }
   })
 }
