@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Product Sans Regular';
+  src: url('../font/Product-Sans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans Bold';
+  src: url('../font/Product-Sans-Bold.ttf') format('truetype');
+}
+
+.browser {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+  height: 96px;
+  padding-top: 16px;
+  padding-left: 12px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  background: #35363A;
+}
+
+.browser-margin{
+  display: none;
+  width: 100%;
+  height: 96px;
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0 5px;
+}
+
+.time {
+  /* margin-left: 42px; */
+  font-family: 'Product Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.info-bar-block-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 48px;
+}
+
+.link-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-bar-wrapper {
+  display: flex;
+  min-width: 228px;
+  width: 62%;
+  background: #3D4043;
+  border-radius: 18px;
+  padding: 11.5px 5px 11.5px 13px;
+  overflow-x: hidden;
+}
+
+.link-bar-wrapper-lock {
+  margin-right: 10px;
+}
+
+.link-bar-wrapper-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 13px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  width: 85%;
+  color: #FFFFFF;
+}
+
+.link-bar-tab {
+  position: relative;
+}
+
+.link-bar-tab-block {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link-bar-tab-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 500px) {
+  .browser {
+    display: flex;
+  }
+  .browser-margin{
+    display: block;
+  }
+}

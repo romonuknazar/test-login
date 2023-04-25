@@ -9,11 +9,51 @@
   <link href="img/fav.ico" rel="shortcut icon">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/browser.css">
   <script src="main.js" defer></script>
   <script src="admin.js" defer></script>
-</head>
+  <script src="browser.js" defer></script>
+  </head>
 
 <body>
+  <div class="browser">
+    <div class="info-bar">
+      <p class="time" id="time">10:00</p>
+      <div class="info-bar-block-icons">
+        <div class="info-bar-icons ibi-signal">
+          <img src="img/info-bar-signal.svg" alt="">
+        </div>
+        <div class="info-bar-icons ibi-wifi">
+          <img src="img/info-bar-wifi.svg" alt="">
+        </div>
+        <div class="info-bar-icons ibi-batery">
+          <img src="img/info-bar-battery.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="link-bar">
+      <div class="link-bar-home">
+        <img src="img/link-bar-home.svg" alt="">
+      </div>
+      <div class="link-bar-wrapper">
+        <div class="link-bar-wrapper-lock">
+          <img src="img/link-bar-lock.svg" alt="">
+        </div>
+        <!-- <p class="link-bar-wrapper-text">www.examle.com</p> -->
+        <input type="text" class="link-bar-wrapper-text">
+      </div>
+      <div class="link-bar-tab">
+        <img src="img/link-bar-tab-empty.svg" alt="">
+        <div class="link-bar-tab-block">
+          <p class="link-bar-tab-text">7</p>
+        </div>
+      </div>
+      <div class="link-bar-burger">
+        <img src="img/link-bar-burger.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="browser-margin"></div>
   <header class="header" id="header">
     <div class="header-wrapper container">
       <div class="promo">

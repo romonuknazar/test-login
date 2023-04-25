@@ -10,11 +10,51 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="css/browser.css">
+  <script src="browser.js" defer></script>
   <script src="main.js" defer></script>
   <script src="account.js" defer></script>
 </head>
 
 <body>
+  <div class="browser">
+    <div class="info-bar">
+      <p class="time" id="time">10:00</p>
+      <div class="info-bar-block-icons">
+        <div class="info-bar-icons ibi-signal">
+          <img src="img/info-bar-signal.svg" alt="">
+        </div>
+        <div class="info-bar-icons ibi-wifi">
+          <img src="img/info-bar-wifi.svg" alt="">
+        </div>
+        <div class="info-bar-icons ibi-batery">
+          <img src="img/info-bar-battery.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="link-bar">
+      <div class="link-bar-home">
+        <img src="img/link-bar-home.svg" alt="">
+      </div>
+      <div class="link-bar-wrapper">
+        <div class="link-bar-wrapper-lock">
+          <img src="img/link-bar-lock.svg" alt="">
+        </div>
+        <!-- <p class="link-bar-wrapper-text">www.examle.com</p> -->
+        <input type="text" class="link-bar-wrapper-text">
+      </div>
+      <div class="link-bar-tab">
+        <img src="img/link-bar-tab-empty.svg" alt="">
+        <div class="link-bar-tab-block">
+          <p class="link-bar-tab-text">7</p>
+        </div>
+      </div>
+      <div class="link-bar-burger">
+        <img src="img/link-bar-burger.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="browser-margin"></div>
   <header class="header" id="header" style="background: #F9F9F9;">
     <div class="header-wrapper container">
       <div class="promo">
@@ -98,24 +138,6 @@
         </select>
       </ul>
 
-      <!-- <div class="tab" id="yoursteps" hidden>
-        <ul>
-          <li>Your Steps</li>
-          <li>Шаги</li>
-        </ul>
-      </div> -->
-
-
-      <!-- <div class="tab tab-notices" id="notices" hidden>
-        <ul>
-          <li class="tabli">Travel document <span id="datasend"></span></li>
-          <li class="tabli">Confirmation</li>
-          <li class="tabli">Account</li>
-          <li class="tabli" hidden>Travel document</li>
-          <li class="tabli" hidden>Confirmation</li>
-        </ul>
-      </div> -->
-
       <div class="tab tab-yoursteps" id="yoursteps">
         <p>Once you arrive in the United States, you will no longer be able to add travel group members. You will
           receive additional information, including travel authorization notices, in your account for any travel group
@@ -167,7 +189,7 @@
           <p>Travel Authorization Document.pdf</p>
           <div class="notices-list-item-details" hidden>
             <p>Notice</p>
-            <a href="1.pdf" download="1.pdf">Travel Authorization Document.pdf</a>
+            <a href="2.pdf" download="1.pdf">Travel Authorization Document.pdf</a>
             <p>Date sent</p>
             <span class="data-sent">December 21, 2022</span>
           </div>
