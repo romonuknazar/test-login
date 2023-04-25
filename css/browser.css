@@ -62,11 +62,12 @@
 
 .link-bar-wrapper {
   display: flex;
+  align-items: center;
   min-width: 228px;
   width: 62%;
   background: #3D4043;
   border-radius: 18px;
-  padding: 11.5px 5px 11.5px 13px;
+  padding: 8.5px 5px 8.5px 13px;
   overflow-x: hidden;
 }
 
@@ -80,7 +81,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 13px;
-  height: 14px;
+  height: 19px;
   display: flex;
   align-items: center;
   width: 85%;
